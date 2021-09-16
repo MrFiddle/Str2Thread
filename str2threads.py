@@ -2,11 +2,17 @@ from re import T
 import tweepy
 from tweepy.models import Status
 
-consumer_key = "o6xdGFbZ5Yls1PHUbjoYNiE5X"
+# I forgot to remove these tokens before uploading my project to GitHub hehe, so even if I delete them and push
+# the changes to my repo they could still be found on the initials commits, so y'all know my old tokens now xD.
+
+# PD: THIS IS AN HORRIBLE WAY TO READ YOUR TOKENS WHILE WORKING WITH APIS AS YOU CAN SEE, SO DON'T DO IT.
+
+consumer_key = "o6xdGFbZ5Yls1PHUbjoYNiE5X" # I can explain this! Read the comments above to know why this is here on a public repo
 consumer_secret = "07Yw1bFwNLZE8FavT5vmImycuwn6TEkJRTWWCU1RscYGOWZXol"
 
 access_token = "848488981-oaRJQoSK3mvyFnioMxVVvyATuM8hzPmCGjzX1pxB"
 access_token_secret = "mPtaaKygZ5ZIkf78J2R2UKKNKVt5dafWr1U4V3DjhtS5m"
+
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
