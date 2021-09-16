@@ -61,7 +61,7 @@ def textToThread(txt):
                 not_buffer = not_buffer + 1
             continue    
 
-with open('tweet.txt') as f:
+with open('tweet.txt', encoding ='utf8') as f:
     tweet = f.read()
     f.close()
 
