@@ -61,7 +61,9 @@ def textToThread(txt):
                 not_buffer = not_buffer + 1
             continue    
 
-tweet = "Este último año me he dado cuenta de que las personas a las que se le dificulta el uso de tecnología como computadoras / celulares (por lo general personas de 40+ años) tienden a tener un miedo a equivocarse mucho más grande que las personas que no se les dificulta la tecnología. Por esto mismo es que tienden a pedir ayuda a personas que saben que si le saben al tema en vez de buscar soluciones por su cuenta, porque les da miedo moverle y que dejen peor las cosas por más minima que sea, al menos esto pasa con mi papá y mi mamá. Siempre se me han hecho curiosas las diferencias generacionales. Muchas de estas personas se asombran cuando alguien les soluciona el problema que tenian y los ven como super genios, cuando en realidad muchas de las cosas las sabemos nomás por moverle y dar con lo que queremos o con una simple busqueda en Google xd"
+with open('tweet.txt') as f:
+    tweet = f.read()
+    f.close()
 
 print(tweet)
 textToThread(tweet)
